@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Verification</title>
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Document Verification</h1>
+    <form id="verification-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="US">United States</option>
+        <option value="CA">Canada</option></select
+      ><br />
+
+      <label for="document-type">Document Type:</label>
+      <select id="document-type" name="document-type" required>
+        <option value="Passport">Passport</option>
+        <option value="DriverLicense">Driver’s License</option></select
+      ><br />
+
+      <button type="submit">Start Verification</button>
+    </form>
+
+    <p id="shortCodeDisplay"></p>
+
+    <div id="trulioo-sdk"></div>
+  </body>
+</html>
